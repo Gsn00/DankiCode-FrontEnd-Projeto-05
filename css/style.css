@@ -1,0 +1,839 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Oswald, sans-serif;
+}
+
+html, body {
+	height: 100%;
+}
+
+.center {
+	width: 100%;
+	max-width: 1200px;
+	margin: 0 auto;
+}
+
+/* INICIO HEADER */
+
+header {
+	background-color: white;
+	padding: 20px 2%;
+	height: 115px;
+}
+
+header .center {
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	min-height: 75px;
+}
+
+.logo {
+	width: 180px;
+}
+
+.logo img {
+	width: 100%;
+}
+
+header {
+	border-bottom: 3px solid #ec2d2f;
+}
+
+header .center nav.menu-desktop ul {
+	display: flex;
+	gap: 15px;
+	list-style-type: none;
+}
+
+header .center nav ul li a {
+	text-decoration: none;
+	color: black;
+	font-size: 22px;
+	font-style: italic;
+}
+
+.menu-mobile {
+	display: none;
+	z-index: 999;
+	text-align: center;
+}
+
+.menu-mobile-icon {
+	width: 32px;
+	height: 32px;
+	background-image: url('../images/icon_menu.png');
+	-webkit-tap-highlight-color: transparent;
+	background-repeat: no-repeat;
+	background-position: center;
+	cursor: pointer;
+}
+
+.menu-mobile ul {
+	position: absolute;
+	top: 115px;
+	left: 0;
+	width: 100%;
+	height: 0;
+	visibility: hidden;
+	background-color: white;
+	transition: 0.5s;
+	overflow-y: hidden;
+	list-style-type: none;
+}
+
+.menu-mobile ul li {
+	padding: 10px 0;
+}
+
+/* FIM HEADER */
+
+/* INICIO BANNER */
+
+section.banner {
+	background-color: black;
+	background-image: url('../images/bg.jpg');
+	background-repeat: no-repeat;
+	background-size: 60%;
+	background-position: right bottom;
+	width: 100%;
+	min-height: 600px;
+	height: calc(100vh - 115px);
+	max-height: 800px;
+}
+
+section.banner .center {
+	display: flex;
+	flex-direction: column;
+	height: 100%;
+	justify-content: center;
+	padding: 0 5%;
+}
+
+.shape-container {
+	width: 275px;
+}
+
+.shape {
+	background-color: #ec2d2f;
+	width: 230px;
+	height: 60px;
+	clip-path: polygon(15px 0px, 230px 0px, 215px 60px, 0px 60px);
+	margin: 10px 45px;
+}
+
+.shape:nth-of-type(2) {
+	width: 190px;
+	clip-path: polygon(15px 0px, 190px 0px, 175px 60px, 0px 60px);
+	margin: 10px 30px;
+}
+
+.shape:nth-of-type(3) {
+	width: 150px;
+	clip-path: polygon(15px 0px, 150px 0px, 135px 60px, 0px 60px);
+	margin: 10px 15px
+}
+
+.shape:nth-of-type(4) {
+	background-color: white;
+	width: 250px;
+	height: 60px;
+	clip-path: polygon(15px 0px, 250px 0px, 235px 60px, 0px 60px);
+	margin: 10px 0;
+}
+
+.shape p {
+	text-align: center;
+	padding: 8px;
+	color: white;
+	font-size: 28px;
+}
+
+.shape:nth-of-type(4) p {
+	padding: 18px 0px 18px 0px;
+	color: black;
+	font-size: 14px;
+}
+
+/* FIM BANNER */
+
+/* INICIO VEHICLE-SHOWCASE */
+
+.vehicles-showcase {
+	padding: 60px 2%;
+}
+
+.title {
+	text-align: center;
+	position: relative;
+}
+
+.title h2 {
+	font-size: 27px;
+	font-style: italic;
+	font-weight: normal;
+	position: relative;
+	background-color: white;
+	padding: 0 30px 0 25px;
+	display: inline-block;
+	margin-right: -4px;
+}
+
+.line {
+	width: 100%;
+	margin: 0 auto;
+	height: 2px;
+	background-color: black;
+	position: relative;
+	top: 20px;
+	left: 2px;
+}
+
+.vehicles-showcase-content {
+	width: 100%;
+	padding: 30px 0;
+	display: flex;
+	justify-content: center;
+	gap: 15px;
+	flex-wrap: wrap;
+}
+
+.vehicles-showcase-single {
+	width: 100%;
+	max-width: 270px;
+	padding: 5px;
+}
+
+.vehicles-showcase-single-bg {
+	width: 100%;
+	padding-top: 80%;
+	background-repeat: no-repeat;
+	background-size: contain;
+	background-position: center;
+}
+
+.car1 {
+	background-image: url('../images/carro1.jpg');
+}
+
+.car2 {
+	background-image: url('../images/carro2.jpg');
+}
+
+.car3{
+	background-image: url('../images/carro3.jpg');
+}
+
+.vehicles-showcase-single h2 {
+	font-weight: normal;
+	font-style: italic;
+}
+
+.vehicles-showcase-single p {
+	color: #353535;
+	font-size: 15px;
+	font-style: italic;
+}
+
+.btn1 {
+	text-decoration: none;
+	color: white;
+	background-color: #ec2d2f;
+	display: inline-block;
+	height: 35px;
+	text-align: center;
+	padding: 4px 12px 4px 10px;
+	font-style: italic;
+	font-size: 17px;
+	margin-top: 15px;
+	border-bottom: 3px solid #B21E1E;
+}
+
+/* FIM VEHICLE-SHOWCASE*/
+
+/* INICIO SERVICES */
+
+.services {
+	width: 100%;
+	display: flex;
+}
+
+.half1 {
+	width: 50%;
+	padding: 60px 80px;
+	background-color: rgb(42, 42, 42);
+	text-align: right;
+}
+
+.half1-wrapper {
+	display: inline-block;
+	text-align: left;
+	color: white;
+}
+
+.half1-wrapper h2 {
+	font-weight: normal;
+	font-style: italic;
+	font-size: 32px;
+}
+
+.half1-wrapper ul {
+	list-style-position: inside;
+	display: inline-block;
+	padding: 10px 35px 10px 0px;
+}
+
+.half2 {
+	text-align: left;
+	width: 50%;
+	padding: 60px 80px;
+	background-color: #ec2d2f;
+	color: white;
+}
+
+.half2 h2 {
+	font-weight: normal;
+	font-style: italic;
+	font-size: 32px;
+}
+
+.half2 p {
+	font-size: 20px;
+	font-weight: lighter;
+	padding: 10px 0;
+}
+
+.navigation {
+	display: flex;
+	justify-content: space-between;
+}
+
+.navigation .arrows {
+	margin-top: 5px;
+	display: inline-block;
+}
+
+.navigation img {
+	width: 24px;
+	height: 24px;
+	margin-right: 10px;
+	cursor: pointer;
+}
+
+.navigation span {
+	text-align: right;
+	color: #252525;
+	font-size: 20px;
+}
+
+/* FIM SERVICES */
+
+/* INICIO CONTACT */
+
+.contact {
+	padding: 60px 2%;
+}
+
+.contact form {
+	padding: 30px 2%;
+	width: 100%;
+	max-width: 600px;
+	margin: 0 auto;
+	text-align: center;
+}
+
+.form-wrapper {
+	display: inline-block;
+	margin-right: -4px;
+	padding: 20px 7px;
+}
+
+.w100 {
+	width: 100%;
+	height: 35px;
+}
+
+.w50 {
+	width: 50%;
+	height: 35px;
+}
+
+.form-wrapper input, textarea {
+	width: 100%;
+	height: 45px;
+	font-size: 18px;
+	font-style: italic;
+	padding: 0 10px;
+	outline: none;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	color: #ccc;
+}
+
+.contact form ::placeholder {
+	color: #ccc;
+}
+
+.contact textarea {
+	height: 100px;
+	resize: none;
+}
+
+.w100 input[type="submit"] {
+	color: white;
+	background-color: #ec2d2f;
+	display: inline-block;
+	height: 35px;
+	text-align: center;
+	padding: 4px 12px 4px 10px;
+	font-style: italic;
+	font-size: 17px;
+	margin-top: 15px;
+	border: none;
+	border-bottom: 3px solid #B21E1E;
+	cursor: pointer;
+	width: 80px;
+}
+
+/* FIM CONTACT */
+
+/* INICIO MARKET */
+
+.market {
+	min-height: 80%;
+	padding: 60px 2%;
+}
+
+.market-content {
+	padding: 30px 0;
+	display: flex;
+}
+
+.sidebar {
+	width: 100%;
+	max-width: 200px;
+}
+
+.search1 {
+	padding-bottom: 60px;
+}
+
+.search1 h2 {
+	font-size: 22px;
+	font-weight: normal;
+}
+
+.price-bar {
+	width: 100%;
+	height: 10px;
+	border-radius: 30px;
+	margin-top: 10px;
+	position: relative;
+	cursor: pointer;
+}
+
+.price-bar-fill {
+	width: 0%;
+	height: 10px;
+	background-color: #ccc;
+	border-radius: inherit;
+	position: absolute;
+	top: 0;
+	left: 0;
+}
+
+.price-bar-border {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 10px;
+	border: 1px solid #ccc;
+	border-radius: 10px;
+}
+
+.price-bar-pointer {
+	width: 18px;
+	height: 18px;
+	background-color: white;
+	border: 1px solid #a6a6a6;
+	border-radius: 50%;
+	position: absolute;
+	top: -4px;
+	left: calc(0% - 9px);
+}
+
+.average-price p {
+	display: inline-block;
+	margin-right: -4px;
+	width: 50%;
+	font-size: 14px;
+	text-align: left;
+}
+
+.average-price p:nth-of-type(2) {
+	text-align: right;
+}
+
+.search2 h2 {
+	font-size: 22px;
+	font-weight: normal;
+}
+
+.market-form-wrapper {
+	padding-top: 10px;
+}
+
+.market-form-wrapper input[type="checkbox"] {
+	display: none;
+}
+
+.market-form-wrapper label {
+	width: 14px;
+	height: 14px;
+	display: inline-block;
+	border: 1px solid #ccc;
+	border-radius: 3px;
+	cursor: pointer;
+	position: relative;
+}
+
+.market-form-wrapper input[type="checkbox"]:checked + label > .label-circle {
+	display: block;
+}
+
+.label-circle {
+	display: none;
+	width: 6px;
+	height: 6px;
+	background-color: black;
+	border-radius: 50%;
+	position: relative;
+	top: 3px;
+	left: 3px;
+}
+
+.market-form-wrapper span {
+	padding: 0 10px;
+}
+
+/* FIM MARKET */
+
+/* INICIO SALE */
+
+.sale {
+	padding: 60px 2%;
+}
+
+.sale .center {
+	display: flex;
+}
+
+.vehicle-info {
+	width: 60%;
+}
+
+.vehicle-info-image {
+	width: 100%;
+	padding-top: 70%;
+	background-size: contain;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.vehicle-info-gallery-parent {
+	padding: 10px 50px;
+	position: relative;
+}
+
+.arrow-left-gallery {
+	width: 22px;
+	height: 22px;
+	background-image: url('../images/arrow-left.png');
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: calc(50% - 11px);
+	left: 11px;
+	cursor: pointer;
+}
+
+.arrow-right-gallery {
+	width: 22px;
+	height: 22px;
+	background-image: url('../images/arrow-right.png');
+	background-position: center;
+	background-size: 100%;
+	background-repeat: no-repeat;
+	position: absolute;
+	top: calc(50% - 11px);
+	right: 11px;
+	cursor: pointer;
+}
+
+.vehicle-info-gallery {
+	width: 100%;
+	overflow: hidden;
+}
+
+.vehicle-info-gallery-wrapper {
+	width: fit-content;
+	display: flex;
+}
+
+.vehicle-info-gallery-image {
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	border-radius: 5px;
+}
+
+.vehicle-info-gallery-image div {
+	background-size: 100% auto;
+	background-repeat: no-repeat;
+	background-position: center;
+	border-radius: 5px;
+	cursor: pointer;
+	width: 90%;
+	height: 90%;
+}
+
+.vehicle-description {
+	width: 40%;
+	padding: 0 30px;
+}
+
+.vehicle-description h2 {
+	padding-bottom: 10px;
+}
+
+/* FIM SALE */
+
+/* INICIO ABOUT */
+	
+.about {
+	padding: 60px 2%;
+	min-height: 80%;
+}
+
+.about-container1 {
+	padding: 60px 0 15px 0;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+	max-width: 800px;
+}
+
+.about-container1-image {
+	width: 100%;
+	padding-top: 60%;
+	background-color: #ccc;
+	background-image: url('../images/carro4.jpg');
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.about-container1 h2 {
+	text-align: left;
+	font-style: normal;
+	padding: 10px 0;
+}
+
+.about-container1 p {
+	text-align: left;
+	font-size: 18px;
+}
+
+.about-container2 {
+	padding: 15px 0;
+	margin: 0 auto;
+	max-width: 800px;
+	text-align: left;
+}
+
+.about-container2-image {
+	width: 30%;
+	padding-top: 30%;
+	display: inline-block;
+	margin-right: -4px;
+	background-color: #ccc;
+}
+
+.about-container2 p {
+	vertical-align: top;
+	width: 60%;
+	display: inline-block;
+	margin-right: -4px;
+	padding: 0 15px;
+	text-align: left;
+	font-size: 18px;
+}
+
+/* FIM ABOUT*/
+
+/* INICIO FOOTER */
+
+footer {
+	padding: 60px 2%;
+	background-color: #252525;
+}
+
+footer .center {
+	display: flex;
+	justify-content: space-between;
+	color: white;
+	font-style: italic;
+	font-size: 19px;
+}
+
+footer nav ul {
+	display: flex;
+	gap: 25px;
+	list-style-type: none;
+}
+
+footer nav a {
+	text-decoration: none;
+	color: white;
+}
+
+/* FIM FOOTER */
+
+/* INICIO MEDIA QUERIES */
+
+@media screen and (max-width: 1024px) {
+	section.banner {
+		background-size: 80% auto;
+	}
+}
+
+@media screen and (max-width: 768px) {
+	.menu-desktop {
+		display: none;
+	}
+
+	.menu-mobile {
+		display: flex;
+	}
+
+	section.banner {
+		background-size: contain;
+		background-position: center bottom;
+	}
+
+	section.banner .center {
+		align-items: center;
+		justify-content: flex-start;
+		padding: 10% 2%;
+	}
+
+	.services {
+		flex-direction: column;
+	}
+
+	.half1 {
+		width: 100%;
+		text-align: center;
+		padding: 60px 2%;
+	}
+
+	.half2 {
+		width: 100%;
+		padding: 60px 10%;
+	}
+
+	.w50 {
+		width: 100%;
+	}
+
+	.w100 input[type="submit"] {
+		width: 90%;
+		height: 45px;
+	}
+
+	footer .center {
+		justify-content: center;
+		font-size: 16px;
+	}
+
+	footer nav {
+		display: none;
+	}
+
+	.sale .center {
+		flex-direction: column;
+	}
+
+	.vehicle-info {
+		width: 100%;
+	}
+
+	.vehicle-description {
+		width: 100%;
+		padding: 30px 0;
+	}
+
+	.about-container2 {
+		text-align: center;
+	}
+
+	.about-container2-image {
+		width: 60%;
+		padding-top: 60%;
+	}
+
+	.about-container2 p {
+		width: 100%;
+		padding: 10px 0;
+	}
+}
+
+@media screen and (max-width: 580px) {
+	.market-content {
+		flex-direction: column;
+	}
+
+	.sidebar {
+		border: 1px solid #252525;
+		border-radius: 10px;
+		padding: 30px;
+		max-width: 100%;
+		text-align: center;
+	}
+
+	.search2 {
+		display: inline-block;
+		text-align: left;
+	}
+}
+
+@media screen and (max-width: 480px) {
+	section.banner {
+		background-size: 180vw;
+	}
+
+	.vehicles-showcase .title h2 {
+		font-size: 22px;
+	}
+
+	.vehicles-showcase-single {
+		max-width: 370px;
+		text-align: center;
+	}
+
+	.btn1 {
+		width: 100%;
+		height: 45px;
+		padding: 10px;
+	}
+
+	.half1, .half2{
+		padding: 60px 5%;
+	}
+}
+
+/* FIM MEDIA QUERIES */
