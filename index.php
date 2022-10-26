@@ -5,7 +5,7 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<link href="https://fonts.googleapis.com/css2?family=Oswald:wght@300;400;700&display=swap" rel="stylesheet">
 	<title>Projeto 05</title>
-	<link rel="stylesheet" type="text/css" href="css/style.css">
+	<link rel="stylesheet" type="text/css" href="./css/style.css">
 	<link rel="shortcut icon" type="image-x/png" href="images/icon.ico">
 </head>
 <body>
@@ -65,8 +65,8 @@
 		</div><!-- center -->
 	</footer>
 
-	<script src="js/jquery.js"></script>
-	<script src="js/functions.js"></script>
+	<script src="./js/jquery.js"></script>
+	<script src="./js/functions.js"></script>
 	<script async src="https://www.googletagmanager.com/gtag/js?id=G-FV0QZESF5M"></script>
 	<script>
 		window.dataLayer = window.dataLayer || [];
